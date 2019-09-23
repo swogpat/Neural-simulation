@@ -1,0 +1,3 @@
+function [PhosphorylationRateModulatorValue]=PhosphorylationRateModulator(CalciumValue,PowerConstantofPhosphorylation,ConstantofPhosphorylation)
+
+PhosphorylationRateModulatorValue=(CalciumValue^PowerConstantofPhosphorylation)/(ConstantofPhosphorylation+CalciumValue^PowerConstantofPhosphorylation);
